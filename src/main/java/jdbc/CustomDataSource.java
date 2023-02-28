@@ -29,14 +29,10 @@ public class CustomDataSource implements DataSource {
         this.url = url;
         this.name = name;
         this.password = password;
-        instance = this;
     }
-
     public static CustomDataSource getInstance() {
         if (instance == null) {
-
             synchronized (CustomDataSource.class) {
-
                 if (instance == null) {
                     try {
                         Properties properties = new Properties();
