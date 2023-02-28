@@ -18,7 +18,7 @@ import java.util.List;
 public class SimpleJDBCRepository {
 
     private static final String createUserSQL = "INSERT INTO myusers (firstName, lastName, age) VALUES (?, ?, ?);";
-    private static final String updateUserSQL = "UPDATE myusers SET firstname = ?, lastname = ?, age= ? WHERE id=?;";
+    private static final String updateUserSQL = "UPDATE myusers SET firstName = ?, lastName = ?, age= ? WHERE id=?;";
     private static final String deleteUser = "DELETE FROM myusers WHERE id = ?";
     private static final String findUserByIdSQL = "SELECT * FROM myusers WHERE id = ?;";
     private static final String findUserByNameSQL = "SELECT * FROM myusers WHERE firstName =?;";
